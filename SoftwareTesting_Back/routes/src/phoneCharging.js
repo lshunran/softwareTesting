@@ -81,6 +81,22 @@ exports.charge = function(req, res, next){
     });
 }
 
+exports.payway = function(req, res, next){
+	var data = req.body;
+	Bill.payway(data).done(function(data){
+		console.log("data:"+data);
+        if(data){
+            res.json({
+                errorCode: data
+            });
+        }else{
+            res.json({
+                error: 未知错误
+            });
+        }
+    });
+}
+
 
 
 

@@ -11,4 +11,7 @@ router.post('/charging',charging.charging);
 router.post('/bill', charging.bill);
 router.post('/charge',charging.charge);
 
+
+router.post('/payway',charging.payway);
+
 module.exports = router;
