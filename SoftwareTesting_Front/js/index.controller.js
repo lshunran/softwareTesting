@@ -27,7 +27,7 @@
                     $scope.date = response.Bill.date;
                     $scope.totalNum = response.Bill.totalNum;
                     if(response.Bill.status == 0) $scope.status = "未缴费";
-                    else $scope.status = "已缴费";
+                    else if(response.Bill.status == 1)$scope.status = "已缴费";
 
                     console.log(response.Bill.phone);
                 }, function (error) {
@@ -36,22 +36,29 @@
         }
 
 
-        $scope.charge = function (num,status,payway) {
-            console.log(num+status+payway);
+        $scope.charge = function (num,status,payway,account,totalNum) {
+            console.log(num+status+payway+account);
+            var tag;
+            if(payway == "card") tag=1;
+            else if(payway == "alipay") tag=0;
+            console.log(tag);
             if(status == "已缴费"){
                 alert('该用户已缴费');
 
             }else {
 
-                $resource('http://localhost:7777/charge').save({}, {
-                    phoneNum: num
+                $resource('http://localhost:7777/payway').save({}, {
+                    phoneNum: num,
+                    tag: tag,
+                    account: account,
+                    totalNum: totalNum
                 }).$promise.then(
                     function (response) {
                         console.log(response);
-                        if (response.errorCode == 0) {
+                        if (response.result == "支付成功") {
                             alert('缴费成功');
                         } else {
-                            alert('缴费失败');
+                            alert(response.result);
                         }
                     }, function (error) {
                         console.log(error);

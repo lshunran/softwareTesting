@@ -118,6 +118,7 @@ Bill.payway = function(data){//tag=0 alipay  tag=1 bankcard ,account,totalNum
 				console.log("111");
 				balance = balance - data.totalNum;
 				alipay.child(data.account).update({"balance":balance},function(err){
+					Bill.child(data.phoneNum).update({"status": 1});
 					deferred.resolve("支付成功");
 				})
 								//deferred.resolve("支付成功1");
@@ -148,6 +149,7 @@ Bill.payway = function(data){//tag=0 alipay  tag=1 bankcard ,account,totalNum
 				console.log("111");
 				balance = balance - data.totalNum;
 				bankcard.child(data.account).update({"balance":balance},function(err){
+					Bill.child(data.phoneNum).update({"status": 1});
 					deferred.resolve("支付成功");
 				})
 								//deferred.resolve("支付成功1");

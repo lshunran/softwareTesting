@@ -108,8 +108,15 @@
     </div>
 
     <div class="row">
+        <div class="col-md-7 col-md-offset-3">
+            <input type="text" class="form-control" placeholder="请输入您的账户" style="width: 85%;margin-top: 30px" ng-model="account">
+
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col-md-2 col-md-offset-3">
-            <button type="button" class="btn btn-primary btn-lg" style="margin-top: 50px;margin-left: 80px" ng-click="charge(num,status,payway)">手机缴费</button>
+            <button type="button" class="btn btn-primary btn-lg" style="margin-top: 50px;margin-left: 80px" ng-click="charge(num,status,payway,account,totalNum)">手机缴费</button>
 
         </div>
         <div class="col-md-2">

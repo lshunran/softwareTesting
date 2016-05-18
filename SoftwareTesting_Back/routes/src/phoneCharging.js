@@ -87,7 +87,7 @@ exports.payway = function(req, res, next){
 		console.log("data:"+data);
         if(data){
             res.json({
-                errorCode: data
+                result: data
             });
         }else{
             res.json({
