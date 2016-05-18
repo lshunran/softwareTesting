@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ad3da6c-b689-425f-9f06-16f7d5f12b9a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareTesting_Back/routes/src/Bill.js" afterPath="$PROJECT_DIR$/SoftwareTesting_Back/routes/src/Bill.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareTesting_Back/routes/src/phoneCharging.js" afterPath="$PROJECT_DIR$/SoftwareTesting_Back/routes/src/phoneCharging.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareTesting_Front/index.html" afterPath="$PROJECT_DIR$/SoftwareTesting_Front/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SoftwareTesting_Front/js/index.controller.js" afterPath="$PROJECT_DIR$/SoftwareTesting_Front/js/index.controller.js" />
     </list>
@@ -29,9 +28,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SoftwareTesting_Front/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="333">
+              <caret line="122" column="44" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="44" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#div#1;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,8 +40,8 @@
       <file leaf-file-name="index.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SoftwareTesting_Front/js/index.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+            <state relative-caret-position="180">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -216,12 +217,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1463576282931</updated>
-      <workItem from="1463576284588" duration="1331000" />
+      <workItem from="1463576284588" duration="1675000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1331000" />
+    <option name="totallyTimeSpent" value="1675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="784" extended-state="0" />
@@ -263,17 +264,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SoftwareTesting_Front/js/index.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+        <state relative-caret-position="180">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SoftwareTesting_Front/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="333">
+          <caret line="122" column="44" selection-start-line="122" selection-start-column="38" selection-end-line="122" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -57,6 +57,7 @@
                         console.log(response);
                         if (response.result == "支付成功") {
                             alert('缴费成功');
+                            $scope.getbill(num);
                         } else {
                             alert(response.result);
                         }
