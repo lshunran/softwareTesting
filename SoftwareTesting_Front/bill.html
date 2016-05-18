@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SoftwareTesting" ng-controller="billCtrl">
+<head>
+    <meta charset="UTF-8">
+    <title>Bill</title>
+</head>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<script src="./js/jquery-2.2.3.min.js"></script>
+
+<script src="./js/bootstrap.min.js"></script>
+<body>
+<div class="container" style="width: 80%">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-5">
+            <h1>本月账单</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-4">
+            <table class="table table-responsive table-striped table-bordered table-hover no-margin">
+                <thead>
+                <tr>
+                    <th style="width:20%">
+                        手机号
+                    </th>
+                    <th style="width:20%" class="hidden-xs">
+                        本月通话时间(分钟)
+                    </th>
+                    <th style="width:20%" class="hidden-xs">
+                        至本月不按时缴费次数
+                    </th>
+                    <th style="width:20%" class="hidden-xs">
+                        跨年未缴费金额
+                    </th>
+                    <th style="width:10%" class="hidden-xs">
+                        查询日期
+                    </th>
+                    <th style="width:10%" class="hidden-xs">
+                        需缴金额
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr >
+                    <td>
+                        {{phonenum}}
+                    </td>
+                    <td>
+                        530
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        123
+                    </td>
+                    <td>
+
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-offset-5">
+            <button class="btn btn-info">马上缴费</button>
+            <button class="btn btn-info">返回上级</button>
+        </div>
+        <div class="col-sm-2">
+        </div>
+
+    </div>
+</div>
+<script src="./js/angular.min.js"></script>
+<script src="./js/angular-resource.js"></script>
+<script src="./js/bill.controller.js"></script>
+</body>
+<script type="text/javascript">
+
+</script>
+</html>

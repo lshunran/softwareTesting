@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SoftwareTesting" ng-controller="indexCtrl">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-2.2.3.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!--<button class="btn btn-danger">haha</button>-->
+<!--<div ng-app="">-->
+    <!--<p>名字 : <input type="text" ng-model="name"></p>-->
+    <!--<h1>Hello {{name}}</h1>-->
+<!--</div>-->
+<div class="container" style="width: 80%;padding-top: 100px ">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-3">
+            <h1>欢迎来到手机话费网上缴费系统</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7 col-md-offset-3">
+            <input type="text" class="form-control" placeholder="请输入手机号码.." style="width: 85%;margin-top: 30px" ng-model="num">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-5">
+            <h1>本月账单</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <table class="table table-responsive table-striped table-bordered table-hover no-margin">
+                <thead>
+                <tr>
+                    <th style="width:20%">
+                        手机号
+                    </th>
+                    <th style="width:10%" class="hidden-xs">
+                        本月通话时间(分钟)
+                    </th>
+                    <th style="width:10%" class="hidden-xs">
+                        至本月不按时缴费次数
+                    </th>
+                    <th style="width:10%" class="hidden-xs">
+                        跨年未缴费金额
+                    </th>
+                    <th style="width:20%" class="hidden-xs">
+                        查询日期
+                    </th>
+                    <th style="width:20%" class="hidden-xs">
+                        需缴金额
+                    </th>
+                    <th style="width:10%" class="hidden-xs">
+                        缴费状态
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr >
+                    <td>
+                        {{phonenum}}
+                    </td>
+                    <td>
+                        {{mins}}
+                    </td>
+                    <td>
+                        {{times}}
+                    </td>
+                    <td>
+                        {{remains}}
+                    </td>
+                    <td>
+                        {{date}}
+                    </td>
+                    <td>
+                        {{totalNum}}
+                    </td>
+                    <td ng-model="status">
+                        {{status}}
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-offset-5">
+            支付方式:
+            <label>
+                <input type="radio" ng-model="payway" value="card">
+                银行卡
+            </label>
+
+            <label>
+                <input type="radio" ng-model="payway" value="alipay">
+                支付宝
+            </label>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 col-md-offset-3">
+            <button type="button" class="btn btn-primary btn-lg" style="margin-top: 50px;margin-left: 80px" ng-click="charge(num,status,payway)">手机缴费</button>
+
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-primary btn-lg" style="margin-top: 50px;margin-left: 110px" ng-click="getbill(num)">查询账单</button>
+
+        </div>
+    </div>
+
+
+</div>
+<script src="./js/angular.min.js"></script>
+<script src="./js/angular-resource.js"></script>
+<script src="./js/index.controller.js"></script>
+<script type="text/javascript">
+    function gotobill() {
+        window.location.href="./bill.html";
+    }
+</script>
+</body>
+</html>
